@@ -21,6 +21,7 @@ public class MyWorld extends World {
         
         createApple();
         
+        setBackground("images/background.jpg");
     }
     
     /**
