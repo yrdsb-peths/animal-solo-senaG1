@@ -26,6 +26,13 @@ public class Elephant extends Actor
     /**
     * Animate the elephant   
     */
+   
+    int imageIndex = 0;
+    public void animateElephant()
+    {
+        setImage(idle[imageIndex]);
+        imageIndex = (imageIndex + 1) % idle.length;
+    }
     
     public void act()
     {
@@ -39,7 +46,11 @@ public class Elephant extends Actor
         
         //remove apple of elephant eatsit
         eat();
+        
+        // Animate the elephant
+        animateElephant();
     }
+    
     /**
     * Eats the apple and spawn new apple if an apple is eaten
     */
