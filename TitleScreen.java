@@ -20,6 +20,8 @@ public class TitleScreen extends World
 
         addObject(titleLabel, getWidth()/2, 200);
         prepare();
+        
+        setBackground("images/background2.png");
     }
 
     /**
@@ -50,5 +52,16 @@ public class TitleScreen extends World
         label2.setLocation(290,307);
         label2.setLocation(227,294);
         label2.setLocation(240,296);
+        elephant.setLocation(300,106);
+        elephant.setLocation(257,124);
+        elephant.setLocation(279,111);
+        elephant.setLocation(296,79);
+        label.setLocation(376,238);
+        label.setLocation(324,229);
+        label2.setLocation(380,324);
+        label2.setLocation(278,314);
+        label2.setLocation(304,328);
+        label.setLocation(324,268);
+        label.setLocation(302,268);
     }
 }
